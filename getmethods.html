@@ -21,20 +21,35 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-        <!-- part 1 start -->
+        <!-- Events start -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            part 1
+            Events
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="selectors.html">Selectors</a>
+            <a class="dropdown-item" href="mouseevents.html">Mouse Events</a>
+            <a class="dropdown-item" href="keyboardevents.html">Keyboard Events</a>
+            <a class="dropdown-item" href="formevents.html">Form Events</a>
+            <a class="dropdown-item" href="windowevents.html">Window Events</a>
           </div>
         </li>
-        <!-- part 1 end -->
+        <!-- Events end -->
+        <!-- Methods start -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Methods
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="getmethods.html">Get Methods</a>
+          </div>
+        </li>
+        <!-- Methods end -->
       </ul>
     </div>
   </nav>
@@ -43,10 +58,10 @@
   <section>
     <div class="container">
       <div class="row">
-        <div id="test1" class="col-md-6 mt-5 text-white">
-          <div class="bg-primary px-5 py-5">
-            <h2>Test 1</h2>
-            <p>
+        <div id="test1" class="col-md-12 mt-5">
+          <div class="bg-info px-5 py-5 text-white">
+            <h2>GET Events</h2>
+            <p class="test">
               Lorem consequat aliqua sint nulla ad sunt nulla. Mollit aliqua laboris ad ad laboris quis ea
               sunt
               labore sunt veniam est. Et cillum ipsum cillum amet ullamco sit. Ea est consequat enim velit
@@ -54,21 +69,33 @@
             </p>
           </div>
         </div>
-
-        <div id="test2" class="col-md-6 mt-5 text-white">
-          <div class="bg-dark px-5 py-5">
-            <h2>Test 2</h2>
-            <p>
-              Lorem consequat aliqua sint nulla ad sunt nulla. Mollit aliqua laboris ad ad laboris quis ea
-              sunt
-              labore sunt veniam est. Et cillum ipsum cillum amet ullamco sit. Ea est consequat enim velit
-              amet exercitation sunt culpa.
-            </p>
+        <!-- form template -->
+        <form action="#" id="myform" autocomplete="off">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+            <!-- <small class="text-danger" id="invalidText"></small> -->
           </div>
-        </div>
 
+          <div class="form-group">
+            <label for="class">Class</label>
+            <input type="text" class="form-control" id="class" placeholder="Enter Class">
+          </div>
+
+          <div class="form-group">
+            <label for="select">Select</label>
+            <select class="form-control" id="select">
+              <option value="india">India</option>
+              <option value="srilanka">Srilanka</option>
+              <option value="bangladesh">Bangladesh</option>
+              <option value="nepal">Nepal</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+        <!-- form template -->
       </div>
-    </div>
   </section>
   <!-- section end -->
 
@@ -77,7 +104,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- bootstrap -->
-  <script src="js/index.js"></script>
+  <script src="js/getmethods.js"></script>
 </body>
 
 </html>
